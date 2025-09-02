@@ -1,0 +1,119 @@
+body {
+    color: white;
+    font-family: serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #1c1c1c, #000);
+    min-height: 100vh;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    margin: 40px auto;
+    gap: 0;
+}
+
+
+.box {
+    display: inline-block;
+    border: 6px solid;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.box:hover {
+    background-color: #ddd;
+    cursor: auto;
+}
+
+
+span {
+    font-size: 70px;
+    line-height: 100px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.top {
+    border-top: none;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.left {
+    border-left: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.alert {
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: black;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+button {
+    background: white;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #888;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+
+button:focus {
+    background: silver;
+}
+
+.activeBox {
+    background: silver;
+}
+
+@keyframes larger {
+    from {
+        height: 75px;
+        width: 125px;
+    }
+
+    to {
+        height: 100px;
+        width: 250px;
+    }
+
+}
